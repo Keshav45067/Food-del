@@ -1,0 +1,62 @@
+.food-popup{
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    background-color: #00000090;
+    display: grid;
+}
+.food-popup-container{
+    z-index: 2;
+    place-self: center;
+    width: max(58vw,730px);
+    color: #808080;
+    background-color: white;
+    display: flex;
+    /* padding: 20px 20px; */
+    border-radius: 20px;
+    font-size: 14px;
+    animation: fadeIn 0.5s;
+    gap: 20px;
+    box-shadow: 3px 3px 10px #00000090;
+}
+.food-popup-image{
+    height: 40vh;
+    border-radius: 15px 0px 0px 15px;
+}
+.food-popup-details{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    position: relative;
+    padding: 10px;
+    padding-top: 20px;
+}
+.food-popup-cross{
+    position: absolute;
+    top:14px;
+    right: 14px;
+}
+.food-popup-price{
+    color: tomato;
+    font-size: 30px;
+}
+.food-popup-counter{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    padding: 6px;
+    border-radius: 50px;
+    background-color: white;
+}
+.food-popup-details >button{
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    color: white;
+    background-color: tomato;
+    cursor: pointer;
+    font-size: 15px;
+}
